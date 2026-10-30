@@ -27,27 +27,9 @@
             <li>Custom Development</li>
         </ul>
         
-        <button id="promoBtn" data-url="products.html">View Service Promotions</button>
+        <!-- BUG: The link points to 'product.html' (missing the 's'), causing a broken link/404 error -->
+        <p>Interested in our packages? Check out our special <a href="product.html">Service Promotions</a>.</p>
     </main>
-
-    <!-- Issue #5: Fixed Link/Navigation Script -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const promoButton = document.getElementById("promoBtn");
-            
-            if (promoButton) {
-                promoButton.addEventListener("click", function() {
-                    const targetUrl = this.getAttribute("data-url");
-                    // Fixed logic: Ensures the target URL exists before routing to prevent broken link errors
-                    if (targetUrl) {
-                        window.location.href = targetUrl;
-                    } else {
-                        console.error("Navigation error: Target URL is missing.");
-                    }
-                });
-            }
-        });
-    </script>
 
 </body>
 </html>
