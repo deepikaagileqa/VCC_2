@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        
+        <!-- Issue #3: Contact Form Details -->
+        <form action="/submit-form" method="POST">
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+            <br>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+            </div>
+            <br>
+            <button type="submit">Submit Details</button>
+        </form>
+    </main>
+
+</body>
+</html>
